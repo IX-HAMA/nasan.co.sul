@@ -9,3 +9,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
