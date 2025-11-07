@@ -1,1 +1,252 @@
+/* ======= Global Styles ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======= Header ======= */
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ======= Navigation ======= */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00bcd4;
+}
+
+/* ======= Home Section ======= */
+.home {
+  background: linear-gradient(120deg, #00bcd4, #007b8a);
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #fff;
+  color: #007b8a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #007b8a;
+  color: #fff;
+}
+
+/* ======= Products ======= */
+.products {
+  padding: 60px 0;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #007b8a;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #007b8a;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* ======= Services ======= */
+.services {
+  background: #f1f1f1;
+  padding: 60px 0;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #007b8a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ======= About ======= */
+.about {
+  padding: 60px 0;
+}
+
+.about h2 {
+  text-align: center;
+  color: #007b8a;
+  margin-bottom: 20px;
+}
+
+.about p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* ======= Contact ======= */
+.contact {
+  background: #f1f1f1;
+  padding: 60px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #007b8a;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: none;
+}
+
+form button {
+  background: #007b8a;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #00bcd4;
+}
+
+/* ======= Footer ======= */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .home h2 {
+    font-size: 1.8rem;
+  }
+}
