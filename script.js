@@ -1,5 +1,11 @@
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Thanks for contacting nasan.co.sul! We'll get back to you soon.");
-  this.reset();
+// Simple contact form handler
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('✅ Thank you! Your message has been sent.');
+      form.reset();
+    });
+  }
 });
