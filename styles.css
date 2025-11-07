@@ -106,3 +106,17 @@ footer {
     font-size: 2rem;
   }
 }
+.btn {
+  display: inline-block;
+  background: #00e5ff; /* Bright teal */
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00bcd4; /* Darker teal on hover */
+}
