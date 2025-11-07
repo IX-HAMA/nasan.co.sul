@@ -1,252 +1,108 @@
-/* ======= Global Styles ======= */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f7f9fb;
+  font-family: Arial, Helvetica, sans-serif;
   color: #333;
   line-height: 1.6;
+  background-color: #f9f9f9;
 }
 
-/* ======= Header ======= */
+/* Header */
 header {
-  background: #111;
-  color: #fff;
-  padding: 1rem 0;
+  background: #0a74da;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .container {
   width: 90%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/* ======= Navigation ======= */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 1.5rem;
+  gap: 20px;
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-  color: #00bcd4;
+  color: #ffeb3b;
 }
 
-/* ======= Home Section ======= */
-.home {
-  background: linear-gradient(120deg, #00bcd4, #007b8a);
-  color: #fff;
-  text-align: center;
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #007bff, #00b4d8);
+  color: white;
   padding: 100px 20px;
-}
-
-.home h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-
-.home p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  background: #fff;
-  color: #007b8a;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: #007b8a;
-  color: #fff;
-}
-
-/* ======= Products ======= */
-.products {
-  padding: 60px 0;
-}
-
-.products h2 {
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-  color: #007b8a;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.product-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 8px;
+.hero h2 {
+  font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
-.price {
-  color: #007b8a;
-  font-weight: bold;
+.hero p {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
-/* ======= Services ======= */
-.services {
-  background: #f1f1f1;
-  padding: 60px 0;
+.btn {
+  display: inline-block;
+  background: #ffeb3b;
+  color: #333;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
-.services h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-  color: #007b8a;
+.btn:hover {
+  background: #ffc107;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* ======= About ======= */
-.about {
-  padding: 60px 0;
-}
-
-.about h2 {
-  text-align: center;
-  color: #007b8a;
-  margin-bottom: 20px;
-}
-
-.about p {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-}
-
-/* ======= Contact ======= */
-.contact {
-  background: #f1f1f1;
-  padding: 60px 0;
-}
-
-.contact h2 {
-  text-align: center;
-  color: #007b8a;
-  margin-bottom: 30px;
-}
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form input,
-form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  resize: none;
-}
-
-form button {
-  background: #007b8a;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-form button:hover {
-  background: #00bcd4;
-}
-
-/* ======= Footer ======= */
+/* Footer */
 footer {
-  background: #111;
-  color: #fff;
+  background: #0a74da;
+  color: white;
   text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
+  padding: 15px 0;
   margin-top: 40px;
 }
 
-/* ======= Responsive ======= */
+/* Responsive Design */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
+    gap: 10px;
   }
 
-  .home h2 {
-    font-size: 1.8rem;
+  .hero h2 {
+    font-size: 2rem;
   }
 }
